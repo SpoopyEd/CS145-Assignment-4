@@ -44,11 +44,11 @@ public class Account {
     public String getAddress() { // gets address
         return address;
     }
-    public void setPhoneNumber(int phoneNumber) { // sets employee number
+    public void setPhoneNumber(int phoneNumber) { // sets phone number
         this.phoneNumber = phoneNumber;
     }
 
-    public int getPhoneNumber() { // gets employee number
+    public int getPhoneNumber() { // gets phone number
         return phoneNumber;
     }
 

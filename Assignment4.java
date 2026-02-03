@@ -7,6 +7,6 @@ import java.util.Scanner;
 public class Assignment4 {
     public static Scanner input = new Scanner(System.in);  // Create a Scanner object
     public static void main(String[] args) {
-        
+        System.out.println("Welcome to Account Creation, Please type out your preffered Username");
     }
 }
