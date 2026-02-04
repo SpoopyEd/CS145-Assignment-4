@@ -5,22 +5,22 @@
 // Account Username
 // Account Date of Birth
 // Account Address
-// Account Phone Number
+// Account Pin
 
 public class Account {
     private String username; // initializes username
     private int dob; // initializes date of birth
     private String address; // initializes address
-    private int phoneNumber; // initializes phone number
+    private int pin; // initializes pin
 
     public Account() {
 
     }
-    public Account(String username, int dob, String address, int phoneNumber) { // constructor method, constructs a new account
+    public Account(String username, int dob, String address, int pin) { // constructor method, constructs a new account
         this.username = username;
         this.dob = dob;
         this.address = address;
-        this.phoneNumber = phoneNumber;
+        this.pin = pin;
     } // contructer method ends
 
     public void setUsername(String username) {
@@ -44,12 +44,12 @@ public class Account {
     public String getAddress() { // gets address
         return address;
     }
-    public void setPhoneNumber(int phoneNumber) { // sets phone number
-        this.phoneNumber = phoneNumber;
+    public void setPin(int pin) { // sets phone number
+        this.pin = pin;
     }
 
-    public int getPhoneNumber() { // gets phone number
-        return phoneNumber;
+    public int getPin() { // gets phone number
+        return pin;
     }
 
 }
