@@ -23,11 +23,11 @@ public class Account {
         this.phoneNumber = phoneNumber;
     } // contructer method ends
 
-    public void setusername(String username) {
+    public void setUsername(String username) {
         this.username = username; // sets username to username given
     }
 
-    public String getusername() { // gets username
+    public String getUsername() { // gets username
         return username;
     }
     public void setDob(int dob) {

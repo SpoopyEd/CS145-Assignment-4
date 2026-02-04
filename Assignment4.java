@@ -18,9 +18,11 @@ public class Assignment4 {
             dob = input.nextInt();
         } catch (Exception e) {
             System.out.println("Date of birth must be in digit form MMDDYYYY, no letters or symbols allowed");
+        } finally {
+            input.nextLine(); // discards new line, avoids skipping next line
         }
         // likely loop until correct format given
-        System.out.println("Please type out your adress");
+        System.out.println("Please type out your address");
         address = input.nextLine();
         System.out.println("Please type out your phone number");
         try {
@@ -30,6 +32,6 @@ public class Assignment4 {
         }
         // likely loop until correct format given
         Account account = new Account(username, dob, address, phoneNumber);
-        System.out.printf(""); // print account information
+        System.out.printf("Account Created %n Username: %s,%n Date of Birth: %d,%n Address: %s,%n Phone Number: %d", account.getUsername(), account.getDob(), account.getAddress(), account.getPhoneNumber()); // print account information
     }
 }
