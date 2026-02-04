@@ -10,13 +10,21 @@ public class Assignment4 {
         System.out.println("Welcome to Account Creation, Please type out your preffered Username");
         String username = input.nextLine();
         System.out.println("Please type out your date of birth in digit form MMDDYYYY");
-        int dob = input.nextInt();
-        // try catch statement
+        try {
+            int dob = input.nextInt();
+        } catch (Exception e) {
+            System.out.println("Date of birth must be in digit form MMDDYYYY, no letters or symbols allowed");
+        }
+        // likely loop until correct format given
         System.out.println("Please type out your adress");
         String address = input.nextLine();
         System.out.println("Please type out your phone number");
-        int phoneNumber = input.nextInt();
-        // try catch statement
+        try {
+            int phoneNumber = input.nextInt();
+        } catch (Exception e) {
+            System.out.println("Phone number must be in digit form, no letters or symbols allowed");
+        }
+        // likely loop until correct format given
         Account account = new Account(username, dob, address, phoneNumber);
         System.out.printf(""); // print account information
     }
